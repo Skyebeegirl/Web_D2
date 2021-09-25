@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 14</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<button class="btn btn-danger" onclick="if_check()">IF</button>
+<button class="btn btn-primary" onclick="if_else_check()">IF ELSE</button>
+<button class="btn btn-dark" onclick="vote()">VOTE</button>
+<button class="btn btn-success" onclick="day_check()">DAY CHECK 1</button>
+<button class="btn btn-info" onclick="if_else_if()">IF ELSE IF</button>
+<script type="text/javascript">
+	function if_check(){
+		var a=4;
+		var b=8;
+		if(a == b){
+			alert("a is equal to b");
+		}else{
+			alert("a is not equal to b");
+		}
+	}
+
+
+	function if_else_check(){
+		var a=8;
+		var b=4;
+		if(a == b){
+			alert("a is equal to b");
+		}else if(a > b){
+			alert("a is greater than b");
+		}else{
+			alert("a is less than b");
+		}
+	}
+
+
+	function vote(){
+		var a=45;
+		if(a >= 18){
+			alert("you can vote");
+		}else{
+			alert("you can not vote");
+		}
+	}
+
+
+
+	function day_check(){
+		var a=5;
+		switch(a){
+			case 0: alert("Sunday");
+			break;
+			case 1: alert("Monday");
+			break;
+			case 2: alert("Tuesday");
+			break;
+			case 3: alert("Wednesday");
+			break;
+			case 4: alert("Thursday");
+			break;
+			case 5: alert("Friday");
+			break;
+			case 6: alert("Saturday");
+			break;
+			default: alert("no such thing");
+		}
+	}
+
+
+	function if_else_if(){
+		var a=1;
+		while(a < 5){
+			alert("I am a girl");
+			a++;
+		
+		}
+	}
+
+
+
+</script>
+</body>
+</html>

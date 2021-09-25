@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 17</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<button class="btn btn-warning" onclick="number_print1()">NUMBER PRINT 1</button>
+<button class="btn btn-success" onclick="number_print2()">NUMBER PRINT 2</button>
+<button class="btn btn-info" onclick="print_letter()">PRINT LETTER</button>
+<script type="text/javascript">
+	
+	function number_print1(){
+		var person = {name:"Liya", city:"Atlanta", age:"11"};
+		var a;
+		var properties="";
+		for(a in person){
+			properties += person[a];
+			alert(properties);
+		}
+	}
+	function number_print2(){
+		var person = {name1:"Liya",name2:",", name3:"John", name4:",", name5:"Elngsa"};
+		var a;
+		var properties="";
+		for(a in person){
+			properties += person[a];
+			alert(properties);
+		}
+	}
+
+	function print_letter(){
+		var a=1;
+		while(a < 5){
+			alert("I am a girl");
+			a++;
+		}
+	}
+
+</script>
+
+</body>
+</html>

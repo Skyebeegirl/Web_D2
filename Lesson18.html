@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 18</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<button class="btn btn-info" onclick="Liya()">LIYA</button>
+<button class="btn btn-light" onclick="parameter('Liya' , 11 )">PARAMETER</button>
+<button class="btn btn-warning" onclick="school_name('Swanson')">SCHOOL NAME</button>
+<button class="btn btn-success" onclick="mothers_name('Alegnita')">MOTHERS NAME</button>
+<button class="btn btn-primary" onclick="show();">ANONYMOUS FUNCTION</button>
+<script type="text/javascript">
+	function Liya(){
+		alert("I am Liya");
+	}
+	function parameter(name,age){
+		alert("My name is "+name+" and I am "+age);
+	}
+
+	function school_name(schoolname){
+		alert("My school name is "+schoolname);
+	}
+
+	function mothers_name(mothersname){
+		alert("My mothers name is "+mothersname);
+	}
+
+	let show = function (){
+		alert("it is a anonymous function");
+	}
+
+
+</script>
+</body>
+</html>

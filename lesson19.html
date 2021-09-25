@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 19</title>
+</head>
+<body>
+
+<div id="id1"></div>
+<div id="id2"></div>
+<div id="id3"></div>
+<script type="text/javascript">
+	
+	class Car{
+		constructor(name,year){
+			this.name=name;
+			this.year=year;
+		}
+		age(){
+			let date = new Date();
+			return date.getFullYear() - this.year;
+		}
+	}
+
+	let myVehicle1 = new Car("BMW",2010);
+	document.getElementById("id1").innerHTML= "My car age is" +myVehicle1.age();
+
+	let myAge = new Car("LSB",2010);
+	document.getElementById("id2").innerHTML= "I am" +myAge.age();
+
+	let myNumber = new Car("AZ",1984);
+	document.getElementById("id3").innerHTML= "My mom" +myNumber.age();
+</script>
+</body>
+</html>
